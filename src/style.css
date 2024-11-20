@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+  @apply text-4xl font-bold subpixel-antialiased;
+}
+
+h2 {
+  @apply text-3xl font-bold subpixel-antialiased;
+}
+
+h3 {
+  @apply text-2xl font-bold subpixel-antialiased;
+}
+
+h4 {
+  @apply text-xl font-bold subpixel-antialiased;
+}
+
+h5 {
+  @apply text-base font-bold subpixel-antialiased;
+}
