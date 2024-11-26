@@ -5,7 +5,7 @@
       <Canvas :canvasItems="canvasItems" @remove-from-canvas="removeFromCanvas" @update-position="updateItemPosition" />
     </div>
 
-    <div class="w-1/4 relative bg-red-200 flex flex-col">
+    <div class="w-1/4 relative bg-slate-200 flex flex-col overflow-scroll">
       <Toolbox :toolboxItems="toolboxItems" @add-to-canvas="addToCanvas" />
     </div>
   </div>
@@ -29,7 +29,6 @@ const addToCanvas = (itemId) => {
   const itemIndex = toolboxItems.value.findIndex((item) => item.id === itemId);
   if (itemIndex !== -1) {
     const item = toolboxItems.value[itemIndex];
-    toolboxItems.value.splice(itemIndex, 1);
 
     const canvasElement = document.querySelector('.canvas-container');
     const snowmanElement = document.querySelector('.snowman-container > div');
@@ -65,9 +64,6 @@ const removeFromCanvas = (itemId) => {
   if (itemIndex !== -1) {
     const item = canvasItems.value[itemIndex];
     canvasItems.value.splice(itemIndex, 1);
-
-    // Return item to Toolbox
-    toolboxItems.value.push(item);
   }
 };
 

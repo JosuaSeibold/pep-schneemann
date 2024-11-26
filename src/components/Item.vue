@@ -3,7 +3,7 @@
         :class="[isOnCanvas ? 'absolute cursor-move group' : '', 'flex flex-col justify-center items-center select-none']"
         @mousedown="onMouseDown" @touchstart="onTouchStart">
         <div class="flex flex-col justify-center items-center relative">
-            <img :src="image" :alt="name" class="size-20" draggable="false" />
+            <img :src="image" :alt="name" class="size-20" draggable="false" :style="'scale:' + scale" />
             <button v-if="isOnCanvas"
                 class="absolute top-0 right-0 bg-red-500 text-white rounded-full w-6 h-6 flex items-center justify-center hover:bg-red-700 group-hover:flex hidden"
                 @click.stop="removeItem">
@@ -24,6 +24,10 @@ const props = defineProps({
     isOnCanvas: Boolean,
     x: Number,
     y: Number,
+    scale: {
+        type: Number,
+        default: 1
+    }
 });
 
 const emits = defineEmits(['add-to-canvas', 'remove-from-canvas', 'update-position']);

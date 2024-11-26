@@ -1,12 +1,104 @@
 [
     {
-        "name": "Schwarzer Zylinderhut",
-        "link": "https://i.postimg.cc/nrH4Mrw6/Screenshot-1-removebg-preview.png",
-        "category": "hat"
+        "name": "USA Zylinder",
+        "link": "/amerika_zylinder.png",
+        "category": "hat",
+        "scale": 1
     },
     {
-        "name": "Schwarzer Zylinderhut",
-        "link": "https://i.postimg.cc/Jh7WGK1P/Firefly-snowman-carrot-nose-nose-winter-23431-removebg-preview-1.png",
-        "category": "nose"
+        "name": "Ast",
+        "link": "/ast.png",
+        "category": "body",
+        "scale": 1.5
+    },
+    {
+        "name": "Auge",
+        "link": "auge.png",
+        "category": "eye",
+        "scale": 0.4
+    },
+    {
+        "name": "Blauer Zylinder",
+        "link": "blauer_zylinder.png",
+        "category": "hat",
+        "scale": 1
+    },
+    {
+        "name": "Fliege",
+        "link": "fliege.png",
+        "category": "body",
+        "scale": 0.9
+    },
+    {
+        "name": "Mistgabel",
+        "link": "gabel.png",
+        "category": "body",
+        "scale": 1.5
+    },
+    {
+        "name": "Hut",
+        "link": "hut.png",
+        "category": "hat",
+        "scale": 1
+    },
+    {
+        "name": "Kastanie",
+        "link": "kastanie.png",
+        "category": "eye",
+        "scale": 0.4
+    },
+    {
+        "name": "Knopf",
+        "link": "knopf.png",
+        "category": "eye",
+        "scale": 0.4
+    },
+    {
+        "name": "Kohle",
+        "link": "kohle.png",
+        "category": "eye",
+        "scale": 0.3
+    },
+    {
+        "name": "Krawatte",
+        "link": "krawatte.png",
+        "category": "body",
+        "scale": 1
+    },
+    {
+        "name": "Pickaxe",
+        "link": "pickaxe.png",
+        "category": "body",
+        "scale": 2
+    },
+    {
+        "name": "Santa Mütze",
+        "link": "santa_hut.png",
+        "category": "hat",
+        "scale": 1
+    },
+    {
+        "name": "Schal",
+        "link": "schal.png",
+        "category": "body",
+        "scale": 2
+    },
+    {
+        "name": "Ast Rohr",
+        "link": "ast_rohr.png",
+        "category": "body",
+        "scale": 1
+    },
+    {
+        "name": "Karotte",
+        "link": "Karotte.png",
+        "category": "nose",
+        "scale": 0.6
+    },
+    {
+        "name": "Nase",
+        "link": "Nase.png",
+        "category": "nose",
+        "scale": 0.4
     }
 ]
