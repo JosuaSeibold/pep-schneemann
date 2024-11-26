@@ -4,7 +4,7 @@
         <Snowfall class="z-10" />
         <Snowman class="z-20 pt-[450px] md:pt-[790px] md:pl-96" />
         <Item class="z-30" v-for="item in canvasItems" :key="item.id" :id="item.id" :image="item.link" :name="item.name"
-            :is-on-canvas="true" :x="item.x" :y="item.y" :scale="item" @remove-from-canvas="removeFromCanvas"
+            :is-on-canvas="true" :x="item.x" :y="item.y" :scale="item.scale" @remove-from-canvas="removeFromCanvas"
             @update-position="updateItemPosition" />
     </div>
 </template>
