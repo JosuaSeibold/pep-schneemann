@@ -7,7 +7,7 @@
             </h4>
             <div class="flex flex-wrap gap-2">
                 <Item v-for="item in items" :key="item.id" :id="item.id" :image="item.link" :name="item.name"
-                    :is-on-canvas="false" @add-to-canvas="addToCanvas" />
+                    :is-on-canvas="false" @click="addToCanvas(item.id)" class="cursor-pointer"/>
             </div>
         </div>
     </div>
