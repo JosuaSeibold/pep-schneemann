@@ -4,8 +4,7 @@
         <Snowfall class="z-10" />
         <Snowman class="z-20 pt-[450px] md:pt-[790px] md:pl-96" />
         <Item class="z-30" v-for="item in canvasItems" :key="item.id" :id="item.id" :image="item.link" :name="item.name"
-            :is-on-canvas="true" :x="item.x" :y="item.y" :scale="item.scale" @remove-from-canvas="removeFromCanvas"
-            @update-position="updateItemPosition" />
+            :is-on-canvas="true" :x="item.x" :y="item.y" :scale="item.scale" @remove-from-canvas="removeFromCanvas" />
     </div>
 </template>
 
@@ -25,9 +24,5 @@ const emits = defineEmits(['remove-from-canvas', 'update-position']);
 
 const removeFromCanvas = (itemId) => {
     emits('remove-from-canvas', itemId);
-};
-
-const updateItemPosition = (data) => {
-    emits('update-position', data);
 };
 </script>

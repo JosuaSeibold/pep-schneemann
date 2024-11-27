@@ -1,5 +1,5 @@
 <template>
-  <div class="flex h-screen">
+  <div class="flex h-dvh">
     <div class="w-3/4 bg-sky-900 flex flex-col">
       <h1 class="p-4 absolute text-xl font-bold text-red-700">Canvas</h1>
       <Canvas :canvasItems="canvasItems" @remove-from-canvas="removeFromCanvas" @update-position="updateItemPosition" />
